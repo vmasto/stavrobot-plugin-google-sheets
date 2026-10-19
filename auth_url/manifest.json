@@ -1,0 +1,6 @@
+{
+  "name": "auth_url",
+  "description": "Step 1 of connecting Google Sheets. Returns a URL for the user to open. Google may warn the app is unverified: Advanced, then Go to the app. After allowing access the browser fails to load a 127.0.0.1 page, which is expected. The user copies that page's full address and you pass it to auth_complete.",
+  "entrypoint": "run.py",
+  "parameters": {}
+}

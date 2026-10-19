@@ -1,0 +1,19 @@
+{
+  "name": "find",
+  "description": "Find spreadsheets by name, most recently modified first. With no text, lists recent spreadsheets.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "text": {
+      "type": "string",
+      "description": "Words to find in the spreadsheet name."
+    },
+    "max_results": {
+      "type": "integer",
+      "description": "1 to 50. Default 20."
+    },
+    "page_token": {
+      "type": "string",
+      "description": "next_page_token from the previous call, to get the next page."
+    }
+  }
+}

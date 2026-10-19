@@ -1,0 +1,23 @@
+{
+  "name": "create",
+  "description": "Create a new spreadsheet in the root of the user's Drive.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "title": {
+      "type": "string",
+      "description": "The spreadsheet's name."
+    },
+    "tabs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Tab names. Default one tab, Sheet1."
+    },
+    "rows": {
+      "type": "array",
+      "items": {},
+      "description": "Optional rows for the first tab, e.g. a header row, as lists of cell values."
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "append",
+  "description": "Add rows after the last row of a tab's table. Never overwrites.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "spreadsheet": {
+      "type": "string",
+      "description": "Spreadsheet id, or its docs.google.com/spreadsheets URL. A URL with #gid= picks that tab."
+    },
+    "sheet": {
+      "type": "string",
+      "description": "Tab name. Default: the tab in the URL, else the first tab."
+    },
+    "rows": {
+      "type": "array",
+      "items": {},
+      "description": "Rows to write. Each row is a list of cell values in column order, or an object keyed by the tab's header row (row 1) names, e.g. {\"Date\": \"2026-10-19\", \"Amount\": 12.5}."
+    },
+    "input": {
+      "type": "string",
+      "description": "user_entered (default) parses values as if typed: numbers, dates and formulas starting with =. raw stores them as text."
+    }
+  }
+}

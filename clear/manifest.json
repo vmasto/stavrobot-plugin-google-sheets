@@ -1,0 +1,23 @@
+{
+  "name": "clear",
+  "description": "Delete the values in a range, keeping formatting. Confirm with the user first.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "spreadsheet": {
+      "type": "string",
+      "description": "Spreadsheet id, or its docs.google.com/spreadsheets URL. A URL with #gid= picks that tab."
+    },
+    "sheet": {
+      "type": "string",
+      "description": "Tab name. Default: the tab in the URL, else the first tab."
+    },
+    "range": {
+      "type": "string",
+      "description": "Cells in A1 notation, e.g. A2:D9. Required unless all_cells is true."
+    },
+    "all_cells": {
+      "type": "boolean",
+      "description": "Clear every cell of the tab instead of a range. Default false."
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "update",
+  "description": "Overwrite cells starting at range. Check what is there with read first, and confirm with the user before overwriting data they entered.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "spreadsheet": {
+      "type": "string",
+      "description": "Spreadsheet id, or its docs.google.com/spreadsheets URL. A URL with #gid= picks that tab."
+    },
+    "sheet": {
+      "type": "string",
+      "description": "Tab name. Default: the tab in the URL, else the first tab."
+    },
+    "range": {
+      "type": "string",
+      "description": "Where to write in A1 notation, e.g. B5 or A2:C4. The rows fill from its top-left cell."
+    },
+    "rows": {
+      "type": "array",
+      "items": {},
+      "description": "Rows to write. Each row is a list of cell values in column order, or an object keyed by the tab's header row (row 1) names, e.g. {\"Date\": \"2026-10-19\", \"Amount\": 12.5}."
+    },
+    "input": {
+      "type": "string",
+      "description": "user_entered (default) parses values as if typed: numbers, dates and formulas starting with =. raw stores them as text."
+    }
+  }
+}

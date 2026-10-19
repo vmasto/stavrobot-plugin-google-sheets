@@ -1,0 +1,11 @@
+{
+  "name": "get_info",
+  "description": "A spreadsheet's title, link, tabs (with size and header row) and named ranges. Call this before reading or writing an unfamiliar spreadsheet.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "spreadsheet": {
+      "type": "string",
+      "description": "Spreadsheet id, or its docs.google.com/spreadsheets URL. A URL with #gid= picks that tab."
+    }
+  }
+}

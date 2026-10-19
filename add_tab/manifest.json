@@ -1,0 +1,20 @@
+{
+  "name": "add_tab",
+  "description": "Add a tab to a spreadsheet.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "spreadsheet": {
+      "type": "string",
+      "description": "Spreadsheet id, or its docs.google.com/spreadsheets URL. A URL with #gid= picks that tab."
+    },
+    "title": {
+      "type": "string",
+      "description": "The new tab's name."
+    },
+    "rows": {
+      "type": "array",
+      "items": {},
+      "description": "Optional rows for the new tab, e.g. a header row, as lists of cell values."
+    }
+  }
+}

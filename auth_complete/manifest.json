@@ -1,0 +1,11 @@
+{
+  "name": "auth_complete",
+  "description": "Step 2 of connecting Google Sheets. Takes the 127.0.0.1 address the browser ended on (or just its code) and saves a refresh token. Codes expire within minutes and work once.",
+  "entrypoint": "run.py",
+  "parameters": {
+    "url": {
+      "type": "string",
+      "description": "The full http://127.0.0.1/?code=... address from the browser, or the code alone."
+    }
+  }
+}
